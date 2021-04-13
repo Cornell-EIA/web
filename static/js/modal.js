@@ -32,7 +32,7 @@ function genMember(member, className) {
   html = "";
   html += `<div class="card ${className}" style="min-width: 20rem;max-width: 20rem;">`;
 
-  html += `<img onerror="this.src='../static/images/headshots/gray.jpeg'"`;
+  html += `<img onerror="this.src='./static/images/headshots/gray.jpeg'"`;
   html += `src="${member.image}" `;
   html += `alt="${member.bio}" `;
   html += 'class = "card-img-top "';
