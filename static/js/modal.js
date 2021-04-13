@@ -36,7 +36,8 @@ function genMember(member, className) {
   html += `src="${member.image}" `;
   html += `alt="${member.bio}" `;
   html += 'class = "card-img-top "';
-  html += `style = "height:80%; object-fit: cover;"`;
+  html += "height = 270";
+  html += `style = "object-fit: cover;"`;
   html += `id ="${member.name} - ${member.major} ${member.year}">`;
   html += `<h2 class="name">${member.name}</h2>`;
   html += `<p class="title">${member.title}</p>`;
