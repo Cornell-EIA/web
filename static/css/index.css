@@ -334,7 +334,8 @@ footer li {
   /* Center it */
 }
 
-.img-container:hover {
+.img-container:hover,
+.member_card:hover {
   position: relative;
   margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
