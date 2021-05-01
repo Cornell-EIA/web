@@ -3,20 +3,27 @@
 
 <head>
   
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
-    /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap'); */
-    /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap'); */
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&display=swap');
-  </style>
+  
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./static/css/index.css">
+
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap'); */
+  /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap'); */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&display=swap');
+  *{
+    box-sizing:content-box
+  }
+  
+</style>
 
 
 
@@ -162,13 +169,13 @@
             </div>
           </div>
         </div>
-        <div class="column">
+        <div class="column" style="box-sizing:content-box">
           <p>Contact Us</p>
-          <div class="row">
-            <div style="float:left"><a href="https://www.facebook.com/eiacornelluniversity/" class="fa fa-facebook"></a>
+          <div class="d-flex" style="box-sizing:content-box">
+            <div style="box-sizing:content-box"><a href="https://www.facebook.com/eiacornelluniversity/" class="fa fa-facebook"></a>
               </li>
             </div>
-            <div><a href="https://www.instagram.com/cornell_eia/" class="fa fa-instagram"></a></li>
+            <div style="box-sizing:content-box"><a href="https://www.instagram.com/cornell_eia/" class="fa fa-instagram"></a></li>
             </div>
           </div>
           <li>eiacornelluniversity@gmail.com</li>
@@ -240,6 +247,8 @@ $(document).on('click','.member_card', function(){
   showModal($(this).children()[0])
    
 })
+
+
 
 function sort_team(data){
   const teams = ["leads", "engineering", "business", "cultural"]
