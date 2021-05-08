@@ -580,35 +580,21 @@ img {
   background-size: 100%;
 }
 
-#timeline_backgroud {
-  /* background-image: url("../images/bridge18_3.jpg"); */
-  /* background-color: #989696; */
-  height: 100vh;
+.parallax_timeline{
+  background-image: url("../images/timeline/main.jpg");
+  /* no-repeat center; */
   background-size: cover;
-  opacity: 30%;
-  filter: saturate(40%);
+  /* Set a specific height */
+  height: 500px;
+  /* width: 100%; */
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  /* background-position: center;*/
   background-repeat: no-repeat;
-  /* background-size: cover; */
   background-size: 100%;
+
 }
 
-#timeline {
-  position: relative;
-  margin: 0 auto;
-  height: 100vh;
-}
-#timeline::after {
-  content: "";
-  position: absolute;
-  width: 4px;
-  background-image: url("../images/bridge18_3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
 
 .parallax_contact {
   /* The image used */
